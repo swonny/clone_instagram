@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extrahead %}
+<!-- static 연결 -->
+<link rel="stylesheet" href="{% static "css/photo_list.css" %}">
+{% endblock %}
+{% block content %}
+<!-- html 내용 작성 -->
+<body>
+    <div class="card-wrapper">
+    {% for object in object_list %}
+    <div class="card">
+        <div class="card-header">
+            <div>
+                <img class="profile-image" src="" alt="">
+                <h5 class="profile-id">{{ object.author }}</h3>    
+            </div>
+            <div class="menu-etc"><input type="button">...</div>
+        </div>
+        <img class="card-image" src="{{ object.image.url }}" alt="">
+        <div class="card-body">
+            <p class="card-text">{{ object.text }}</p>
+        </div>
+        <ul>
+            <li>수정일: {{object.update}}</li>
+            <li>생성일: {{object.created}}</li>
+        </ul>
+        <div>
+            <a href="{% url 'photo:detail' object.id %}" class="card-link">댓글 달기</a>
+            <a href="{% url 'photo:update' object.id %}" class="card-link">수정하기</a>
+            <a href="{% url 'photo:delete' object.id %}" class="card-link">삭제하기</a>
+        </div>
+        <section class="card-like-comments"></section>
+    </div>
+    {% endfor %}
+    </div>
+</body>
+
+{% endblock %}
