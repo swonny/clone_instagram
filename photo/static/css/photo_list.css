@@ -5,7 +5,7 @@
     margin: 24px 0px;
 }
 
-body {
+.body {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -20,4 +20,58 @@ body {
     height: 60px;
     display: flex;
     justify-content: space-between;
+}
+
+.card-header__wrapper {
+    margin: 15px 0px 0px 20px;
+    display: flex;
+    flex-direction: row;
+} 
+
+.card-header__wrapper > img {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+}
+
+.card-header__wrapper > h5 {
+    display: inline-block;
+    margin: 10px;
+}
+
+.menu-etc >input {
+    margin: 20px 20px 0px 0px;
+    border: none;
+    background-color: white;
+}
+
+.card-body {
+    margin: 10px 10px;
+}
+
+.card-body > h4 {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-left: 10px;
+    padding: 5px 0px;
+}
+
+.card-date > li {
+    color: #bdbdbd;
+    font-size: 12px;
+}
+
+.add-comments {
+
+}
+
+.card-edit,
+.add-comments {
+    margin: 5px 10px;
 }

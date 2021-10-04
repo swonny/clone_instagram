@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extrahead %}
+<!-- static 연결 -->
+<link rel="stylesheet" href="{% static "login.css" %}">
+{% endblock %}
+
+{% block content %}
+<!-- html 내용 작성 -->
+    <div class="alert" role= alert>로그아웃 되었습니다.</div>
+    <a href="{% url 'accounts:login' %}" >로그인하기</a>
+{% endblock %}
