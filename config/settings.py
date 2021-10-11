@@ -32,6 +32,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'disqus',
+    'django.contrib.sites',
     'accounts',
     'photo.apps.PhotoConfig',
     'django.contrib.admin',
