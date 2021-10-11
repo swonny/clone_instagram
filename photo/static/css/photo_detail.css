@@ -1,0 +1,136 @@
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    border: solid #e6e6e6 0.5px;
+}
+
+.card-image {
+    width: 480px;
+    height: 490px;
+}
+
+.card-top {
+    width: 800px;
+    height: 490px;
+    display: flex;
+}
+
+.comments {
+    width: 300px;
+    display: inline-block;
+    height: 480px;
+    margin: 10px;
+}
+
+.comment-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 0.5px #eee;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    height: 50px;
+    padding-top: 10px;
+}
+
+.comment-top > span {
+    padding: 17px 10px;
+}
+
+.card-body > h5 {
+    display: inline-block;
+    padding: 8px 5px 5px 15px;
+    font-size: 16px;
+}
+
+.card-body > p{
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.card-body > img {
+    width: 30px;
+    height: 30px;
+}
+
+.list-group-item {
+    color: #818181;
+    font-size: 12px;
+    text-align: right;
+}
+
+.user-more-box {
+    width: 400px;
+    height: 96px;
+    position: absolute;
+    top: 250px;
+    right: 520px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.more-box {
+    width: 400px;
+    height: 288px;
+    position: absolute;
+    top: 160px;
+    right: 520px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.more-box > a {
+    border-bottom: #e6e6e6 solid 0.5px;
+}
+
+.emp {
+    color: red;
+}
+
+.card-link {
+    height: 48px;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+.del {
+    color: red;
+    border-bottom: solid #e6e6e6 0.5px;
+
+}
+
+.user-more-box > a {
+    font-style: none;
+}
+
+.more-box > li {
+    list-style: none;
+    border-bottom: #e6e6e6 solid 0.5px;
+    height: 48px;
+    padding: 14px;
+}
+
+.hide {
+    display: none;
+}
+
+.dark-background {
+    box-shadow : rgba(0,0,0,0.5) 0 0 0 9999px;
+    z-index : 100;
+}

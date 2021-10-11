@@ -61,3 +61,4 @@ class PhotoDelete(DeleteView):
 class PhotoDetail(DetailView):
     model = Photo
     template_name_suffix = '_detail'
+    

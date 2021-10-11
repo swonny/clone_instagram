@@ -67,6 +67,15 @@ nav {
     justify-content: space-between;
 }
 
+.nav-container > .nav--left {
+    padding: 6px 0;
+}
+
+.nav--left > li > a > img {
+    width: 150px;
+    height: 40px;
+}
+
 .nav--left > li > a{
     font-family: 'instagram-bold';
 }
